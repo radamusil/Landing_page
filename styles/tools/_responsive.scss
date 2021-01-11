@@ -1,0 +1,14 @@
+$DESKTOP: 'only screen and (min-width: #{$breakpoint-desktop})';
+$MOBILE: 'only screen and (max-width: #{$breakpoint-desktop - 1})';
+
+@mixin media($type) {
+    $MEDIA: $MOBILE;
+
+    @if $type == desktop {
+        $MEDIA: $DESKTOP;
+    }
+
+    @media #{$MEDIA} {
+        @content;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../../styles/helpers';
+
+// Config
+
+$btn-min-width: 120px;
+
+// Struct
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: $btn-min-width;
+    height: 30px;
+    padding-left: $horizontal-spacing-double;
+    padding-right: $horizontal-spacing-double;
+    border: 0;
+    outline: none;
+    font-size: $font-size-small;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+// Skin
+
+.btn {
+    background-color: $color-cta;
+    color: $color-white;
+}
